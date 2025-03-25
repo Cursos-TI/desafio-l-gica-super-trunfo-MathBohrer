@@ -102,45 +102,79 @@ int main() {
     switch (escolha) {
         case 1:
             printf("População: %lu vs %lu\n", populacao1, populacao2);
-            if (populacao1 > populacao2) printf("%s venceu!\n", nomeCidade1);
-            else if (populacao2 > populacao1) printf("%s venceu!\n", nomeCidade2);
-            else printf("Empate!\n");
+            if (populacao1 > populacao2){ 
+                printf("%s venceu!\n", nomeCidade1);
+            } else if (populacao2 > populacao1){ 
+                printf("%s venceu!\n", nomeCidade2);
+            } else {
+                printf("Empate!\n");
+            }
             break;
+
         case 2:
             printf("Área: %.2f km² vs %.2f km²\n", area1, area2);
-            if (area1 > area2) printf("%s venceu!\n", nomeCidade1);
-            else if (area2 > area1) printf("%s venceu!\n", nomeCidade2);
-            else printf("Empate!\n");
+            if (area1 > area2) {
+                printf("%s venceu!\n", nomeCidade1);
+            } else if (area2 > area1) {
+                printf("%s venceu!\n", nomeCidade2);
+            } else {
+                printf("Empate!\n");
+            }    
             break;
+
         case 3:
             printf("PIB: %.2f vs %.2f\n", pib1, pib2);
-            if (pib1 > pib2) printf("%s venceu!\n", nomeCidade1);
-            else if (pib2 > pib1) printf("%s venceu!\n", nomeCidade2);
-            else printf("Empate!\n");
+            if (pib1 > pib2) {
+                printf("%s venceu!\n", nomeCidade1);
+            } else if (pib2 > pib1) {
+                printf("%s venceu!\n", nomeCidade2);
+            } else {
+                printf("Empate!\n");
+            }
             break;
+
         case 4:
             printf("Pontos Turísticos: %d vs %d\n", pontosTuristicos1, pontosTuristicos2);
-            if (pontosTuristicos1 > pontosTuristicos2) printf("%s venceu!\n", nomeCidade1);
-            else if (pontosTuristicos2 > pontosTuristicos1) printf("%s venceu!\n", nomeCidade2);
-            else printf("Empate!\n");
+            if (pontosTuristicos1 > pontosTuristicos2) {
+                printf("%s venceu!\n", nomeCidade1);
+            } else if (pontosTuristicos2 > pontosTuristicos1) {
+                printf("%s venceu!\n", nomeCidade2);
+            } else {
+                printf("Empate!\n");
+            }
             break;
+
         case 5:
             printf("Densidade Populacional: %.2f vs %.2f\n", densidade1, densidade2);
-            if (densidade1 < densidade2) printf("%s venceu!\n", nomeCidade1);
-            else if (densidade2 < densidade1) printf("%s venceu!\n", nomeCidade2);
-            else printf("Empate!\n");
+            if (densidade1 < densidade2) {
+                printf("%s venceu!\n", nomeCidade1);
+            } else if (densidade2 < densidade1) {
+                printf("%s venceu!\n", nomeCidade2);
+            } else {
+                printf("Empate!\n");
+            }
             break;
+
         case 6:
             printf("PIB per Capita: %.2f vs %.2f\n", pibPerCapita1, pibPerCapita2);
-            if (pibPerCapita1 > pibPerCapita2) printf("%s venceu!\n", nomeCidade1);
-            else if (pibPerCapita2 > pibPerCapita1) printf("%s venceu!\n", nomeCidade2);
-            else printf("Empate!\n");
+            if (pibPerCapita1 > pibPerCapita2) {
+                printf("%s venceu!\n", nomeCidade1);
+            } else if (pibPerCapita2 > pibPerCapita1) {
+                printf("%s venceu!\n", nomeCidade2);
+            } else { 
+                printf("Empate!\n");
+            } 
             break;
+
         case 7:
             printf("Super Poder: %.2f vs %.2f\n", superPoder1, superPoder2);
-            if (superPoder1 > superPoder2) printf("%s venceu!\n", nomeCidade1);
-            else if (superPoder2 > superPoder1) printf("%s venceu!\n", nomeCidade2);
-            else printf("Empate!\n");
+            if (superPoder1 > superPoder2) { 
+                printf("%s venceu!\n", nomeCidade1);
+            } else if (superPoder2 > superPoder1) {
+                printf("%s venceu!\n", nomeCidade2);
+            } else { 
+                printf("Empate!\n");
+            } 
             break;
         default:
             printf("Opção inválida!\n");
